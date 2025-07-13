@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset=UTF-8">
-  <meta name="viewport" content=width=device-width, initial-scale=1.0"
-  <title>Atita Atelier - Daily Joy Box</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atita Atelier — Daily Joy Box</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #fce9e1, #d8ede2);
-      font-family: "Georgia", serif;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fceefb, #e3e9ff);
+      color: #4a3b4e;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
-      color: #4c3a2f;
-    }
-
-    h1 {
-      font-size: 1.8em;
-      margin-bottom: 0.5em;
-    }
-
-    .box {
-      background-color: #fff9f4;
-      padding: 2em;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      max-width: 400px;
-    }
+    }h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #a85ea2;
+}
 
-    .btn {
-      margin-top: 1.5em;
-      padding: 0.8em 1.5em;
-      font-size: 1em;
-      background-color: #f4d6c8;
-      color: #4c3a2f;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+p {
+  font-size: 1.2rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
 
-    .btn:hover {
-      background-color: #eec7b8;
-    }
+.btn {
+  background-color: #a85ea2;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .message {
-      margin-top: 1.5em;
-      font-size: 1.1em;
-      font-style: italic;
-    }
+.btn:hover {
+  background-color: #8c4887;
+}
 
-    .sparkle {
-      font-size: 1.5em;
-      color: #d9a88b;
-      margin-bottom: 0.5em;
-    }
-  </sty
+  </style>
+</head>
+<body>
+  <h1>Atita Atelier — Daily Joy Box</h1>
+  <p>Ένα απαλό κουτί γεμάτο ενθάρρυνση, γλύκα και μικρές δόσεις χαράς για κάθε μέρα.</p>
+  <button class="btn" onclick="location.href='joy.html'">✨️Άνοιξε το μήνυμά σου✨️</button>
+</body>
+</html>
     <h1>Άνοιξε το μήνυμά σου</h1>
     <button class="btn" onclick="showMessage()">✨ Άνοιξε ✨</button>
     <p class="message" id="message"></p>
-    <div class="footer">με αγάπη από το <strong>@atita.atelier</strong></div>
+    <div class="footer">Με αγάπη από το <strong>@atita.atelier</strong></div>
   </div>
   <script>
     const messages = [
