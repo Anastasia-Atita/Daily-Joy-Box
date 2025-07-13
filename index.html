@@ -48,9 +48,10 @@ p {
 <body>
   <h1>Atita Atelier — Daily Joy Box</h1>
   <p>Ένα μαγικο κουτί γεμάτο ενθάρρυνση, αγάπη και μικρές δόσεις χαράς για κάθε μέρα.</p>
-  <button class="btn" onclick="location.href='joy.html'">✨️Άνοιξε το μήνυμά σου✨️</button>
+  <button class="btn" onclick="showMessage()">✨️Άνοιξε το μήνυμά σου✨️</button>
     <div class="footer">Με αγάπη από το <strong>@atita.atelier</strong></div>
-  </div>
+    <p class="message" id="message"></p>
+</div>
   <script>
     const messages = [
       "Σήμερα, θυμήσου πόσο μακριά έχεις φτάσει. Η δύναμή σου είναι μοναδική.",
