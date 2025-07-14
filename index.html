@@ -1,74 +1,25 @@
 <!DOCTYPE html>
 <html lang="el">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atita Atelier — Daily Joy Box</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #fceefb, #e3e9ff);
-      color: #4a3b4e;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #a85ea2;
-}
-
-p {
-  font-size: 1.2rem;
-  max-width: 500px;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  background-color: #a85ea2;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.6rem;
-  font-size: 1rem;
-  border-radius: 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #8c4887;
-}
-
-  </style>
-</head>
-<body>
-  <h1>Atita Atelier — Daily Joy Box</h1>
-  <p>Ένα μαγικο κουτί γεμάτο ενθάρρυνση, αγάπη και μικρές δόσεις χαράς για κάθε μέρα.</p>
-  <button class="btn" onclick="showMessage()">✨️Άνοιξε το μήνυμά σου✨️</button>
-    <div class="footer">Με αγάπη από το <strong>@atita.atelier</strong></div>
-    <p class="message" id="message"></p>
-  <script>
-    const messages = [
-      "Σήμερα, θυμήσου πόσο μακριά έχεις φτάσει. Η δύναμή σου είναι μοναδική.",
-      "Ό,τι κι αν συμβεί σήμερα, πάρε μια βαθιά ανάσα. Είσαι εδώ. Προχωράς.",
-      "Δεν χρειάζεται να είναι όλα τέλεια. Αρκεί να είναι αληθινά.",
-      "Ακόμα κι ένα μικρό βήμα προς τα μπρος είναι πρόοδος.",
-      "Η μέρα μπορεί να αλλάξει με μία γλυκιά σκέψη.",
-      "Το φως που ψάχνεις είναι ήδη μέσα σου.",
-      "Κάνε ένα πράγμα σήμερα που σου χαρίζει χαμόγελο.",
-      "Η ευγένεια προς τον εαυτό σου είναι το πιο μεγάλο δώρο.",
-      "Όλα θα έρθουν στον χρόνο τους. Πίστεψε στη ροή.",
-      "Είσαι ακριβώς εκεί που χρειάζεται να είσαι αυτή τη στιγμή."
-    ];
-    function showMessage() {
-      const randomIndex = Math.floor(Math.random() * messages.length);
-      const message = messages[randomIndex];
-      document.getElementById('message').innerText = message;
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Atita Atelier — Daily Joy Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Atita Atelier</h1>
+      <h2>Daily Joy Box</h2>
+      <p class="subtitle">Η μικρή σου καθημερινή μαγεία.</p>
+      <p class="main-text">
+        Καλωσόρισες στο προσωπικό σου ‘κουτί χαράς’!<br />
+        Μια μικρή, ψηφιακή απόδραση, γεμάτη τρυφερότητα και έμπνευση.<br />
+        Κάθε φορά που το ανοίγεις, ένα μήνυμα<br />
+        θα εμφανίζεται για να σου φέρει ένα χαμόγελο,<br />
+        μια σκέψη ή μια υπενθύμιση που ίσως χρειάζεσαι σήμερα.
+      </p>
+      <a href="message.html" class="button">✦ Άνοιξε το μήνυμα σου ✦</a>
+      <p class="footer">Άφησε το να σε βρει την κατάλληλη στιγμή.</p>
+    </div>
+  </body>
 </html>
