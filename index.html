@@ -1,37 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <title>Daily Joy Box — Atita Atelier</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atita Atelier — Daily Joy Box</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="box">
-    <div class="sparkle">✨</div>
-    <h1>Open your message</h1>
-    <button class="btn" onclick="showMessage()">✨ Open ✨</button>
-    <p class="message" id="message"></p>
-    <div class="footer">with love from <strong>@atita.atelier</strong></div>
-  </div>
-  <script>
-    const messages = [
-      "Today, remember how far you've come. Your strength is unique.",
-      "Whatever happens today, take a deep breath. You're here. You're moving forward.",
-      "It doesn't have to be perfect. It just has to be real.",
-      "Even a small step forward is progress.",
-      "The day can change with one sweet thought.",
-      "The light you're looking for is already within you.",
-      "Do one thing today that makes you smile.",
-      "Kindness to yourself is the greatest gift.",
-      "Everything will come in its time. Trust the flow.",
-      "You are exactly where you need to be right now."
-    ];
-    function showMessage() {
-      const randomIndex = Math.floor(Math.random() * messages.length);
-      const message = messages[randomIndex];
-      document.getElementById('message').innerText = message;
-    }
-  </script>
+  <h1>Daily Joy Box</h1>
+  <h2>Η μικρή σου καθημερινή μαγεία.</h2>
+
+  <p>Καλωσόρισες στο προσωπικό σου ‘κουτί χαράς’!<br>
+  Μια μικρή, ψηφιακή απόδραση, γεμάτη τρυφερότητα και έμπνευση.</p>
+  <p>Κάθε φορά που το ανοίγεις, ένα μήνυμα θα εμφανίζεται<br>
+  για να σου φέρει ένα χαμόγελο, μια σκέψη ή μια υπενθύμιση<br>
+  που ίσως χρειάζεσαι σήμερα.</p>
+
+  <button onclick="generateMessage()">✨ Άνοιξε το μήνυμα σου ✨</button>
+
+  <p id="message" style="font-size: 1.3rem; margin-top: 2rem; color: #3a2f1d;"></p>
+
+  <footer>Άφησε το να σε βρει την κατάλληλη στιγμή.</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
