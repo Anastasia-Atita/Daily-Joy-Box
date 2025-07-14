@@ -67,3 +67,13 @@ footer {
   opacity: 0.4;
   width: 60px;
 }
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
