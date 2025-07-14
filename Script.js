@@ -10,7 +10,6 @@ const messages = [
   "Να θυμάσαι να αναπνέεις βαθιά και να δίνεις χρόνο στον εαυτό σου.",
   "Ό,τι κι αν συμβαίνει, εσύ προχωράς με τρυφερότητα και θάρρος."
 ];
-
 function generateMessage() {
   const message = messages[Math.floor(Math.random() * messages.length)];
   document.getElementById("message").textContent = message;
