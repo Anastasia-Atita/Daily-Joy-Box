@@ -1,25 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="el">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Atita Atelier — Daily Joy Box</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Atita Atelier</h1>
-      <h2>Daily Joy Box</h2>
-      <p class="subtitle">Η μικρή σου καθημερινή μαγεία.</p>
-      <p class="main-text">
-        Καλωσόρισες στο προσωπικό σου ‘κουτί χαράς’!<br />
-        Μια μικρή, ψηφιακή απόδραση, γεμάτη τρυφερότητα και έμπνευση.<br />
-        Κάθε φορά που το ανοίγεις, ένα μήνυμα<br />
-        θα εμφανίζεται για να σου φέρει ένα χαμόγελο,<br />
-        μια σκέψη ή μια υπενθύμιση που ίσως χρειάζεσαι σήμερα.
-      </p>
-      <a href="message.html" class="button">✦ Άνοιξε το μήνυμα σου ✦</a>
-      <p class="footer">Άφησε το να σε βρει την κατάλληλη στιγμή.</p>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Joy Box — Atita Atelier</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="box">
+    <div class="sparkle">✨</div>
+    <h1>Άνοιξε το μήνυμά σου</h1>
+    <button class="btn" onclick="showMessage()">✨ Άνοιξε ✨</button>
+    <p class="message" id="message"></p>
+    <div class="footer">με αγάπη από το <strong>@atita.atelier</strong></div>
+  </div>
+  <script>
+    const messages = [
+      "Σήμερα, θυμήσου πόσο μακριά έχεις φτάσει. Η δύναμή σου είναι μοναδική.",
+      "Ό,τι κι αν συμβεί σήμερα, πάρε μια βαθιά ανάσα. Είσαι εδώ. Προχωράς.",
+      "Δεν χρειάζεται να είναι όλα τέλεια. Αρκεί να είναι αληθινά.",
+      "Ακόμα κι ένα μικρό βήμα προς τα μπρος είναι πρόοδος.",
+      "Η μέρα μπορεί να αλλάξει με μία γλυκιά σκέψη.",
+      "Το φως που ψάχνεις είναι ήδη μέσα σου.",
+      "Κάνε ένα πράγμα σήμερα που σου χαρίζει χαμόγελο.",
+      "Η ευγένεια προς τον εαυτό σου είναι το πιο μεγάλο δώρο.",
+      "Όλα θα έρθουν στον χρόνο τους. Πίστεψε στη ροή.",
+      "Είσαι ακριβώς εκεί που χρειάζεται να είσαι αυτή τη στιγμή."
+    ];
+    function showMessage() {
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      const message = messages[randomIndex];
+      document.getElementById('message').innerText = message;
+    }
+  </script>
+</body>
 </html>
