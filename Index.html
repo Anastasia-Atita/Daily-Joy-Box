@@ -23,32 +23,13 @@
         χαμόγελο, μια σκέψη ή μια υπενθύμιση που ίσως χρειάζεσαι σήμερα.
       </p>
 
-      <button class="btn" onclick="showMessage()">✨ Άνοιξε το μήνυμά σου ✨</button>
+      <button class="btn" onclick="generateMessage()">✨ Άνοιξε το μήνυμά σου ✨</button>
 
       <p id="message" class="message"></p>
 
       <div class="footer">Με αγάπη από το <strong>@atita.atelier</strong></div>
     </div>
 
-    <script>
-      const messages = [
-        "Σήμερα, θυμήσου πόσο μακριά έχεις φτάσει. Η δύναμή σου είναι μοναδική.",
-        "Ό,τι κι αν συμβεί σήμερα, πάρε μια βαθιά ανάσα. Είσαι εδώ. Προχωράς.",
-        "Δεν χρειάζεται να είναι όλα τέλεια. Αρκεί να είναι αληθινά.",
-        "Ακόμα κι ένα μικρό βήμα προς τα μπρος είναι πρόοδος.",
-        "Η μέρα μπορεί να αλλάξει με μία γλυκιά σκέψη.",
-        "Το φως που ψάχνεις είναι ήδη μέσα σου.",
-        "Κάνε ένα πράγμα σήμερα που σου χαρίζει χαμόγελο.",
-        "Η ευγένεια προς τον εαυτό σου είναι το πιο μεγάλο δώρο.",
-        "Όλα θα έρθουν στον χρόνο τους. Πίστεψε στη ροή.",
-        "Είσαι ακριβώς εκεί που χρειάζεται να είσαι αυτή τη στιγμή.",
-      ];
-
-      function showMessage() {
-        const randomIndex = Math.floor(Math.random() * messages.length);
-        const message = messages[randomIndex];
-        document.getElementById("message").innerText = message;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
